@@ -26,7 +26,7 @@ License Link : https://github.com/LazyDeveloperr/Gangster-Baby-Renamer-BOT/blob/
 
 class mr(object):
     PROGRESS_BAR = """\n
-╭━━━━❰ Gangster Hacking... ❱━➣
+╭━━━━❰ Renaming File... ❱━➣
 ┣⪼ 🗂️ : {1} | {2}
 ┣⪼ ⏳️ : {0}%
 ┣⪼ 🚀 : {3}/s
@@ -54,16 +54,16 @@ class mr(object):
 >> /viewthumb use this command view your current thumbnail.
 
 📑 <b><u>To Set Custom Caption</u></b>
->> /set_caption - set a custom caption
->> /see_caption - see your custom caption
->> /del_caption - delete custom caption
+•> /set_caption - set a custom caption
+•> /see_caption - see your custom caption
+•> /del_caption - delete custom caption
 
 Example:- /set_caption 📕 File Name: {filename}
 💾 Size: {filesize}
 ⏰ Duration: {duration}
 
 ✏️ <b><u>To Rename A File</u></b>
->> Send any file and click rename option and type new file name and \n send select [ document, video, audio ] 👈 choose this.</a>
+•> Send any file and click rename option and type new file name and \n send select [ document, video, audio ]👈 choice this.</a>
 """
 
 #⚠️ don't remove our credits 🙏😢😢

@@ -59,7 +59,7 @@ async def rename_start(client, message):
 @Client.on_callback_query()
 async def cb_handler(client, query: CallbackQuery):
     data = query.data 
-    elif data == "start":
+    if data == "start":
         await query.message.edit_text(
             txt=f"""**👋 Hello, {user.mention} \n\nI am an Advance file Renamer and file Converter BOT with permanent and custom thumbnail support.\n\nSend me any video or document !**""",
     reply_markup=InlineKeyboardMarkup( [[

@@ -17,7 +17,7 @@ async def start(client, message):
     txt=f"""**👋 Hello, {user.mention} \n\nI am an Advance file Renamer and file Converter BOT with permanent and custom thumbnail support.\n\nSend me any video or document !**"""
     button=InlineKeyboardMarkup([[
         InlineKeyboardButton('📢 Updates', url='https://t.me/official_bins'),
-        InlineKeyboardButton('🤝 Support', url='https://t.me/officialbinschat')
+        InlineKeyboardButton('🤝 Support', url='https://t.me/officialbinschats')
         ],[
         InlineKeyboardButton('Commands', callback_data='help')
         ]
@@ -64,7 +64,7 @@ async def cb_handler(client, query: CallbackQuery):
             txt=f"""**👋 Hello, {user.mention} \n\nI am an Advance file Renamer and file Converter BOT with permanent and custom thumbnail support.\n\nSend me any video or document !**""",
     reply_markup=InlineKeyboardMarkup( [[
         InlineKeyboardButton('📢 Updates', url='https://t.me/official_bins'),
-        InlineKeyboardButton('🤝 Support', url='https://t.me/officialbinschat')
+        InlineKeyboardButton('🤝 Support', url='https://t.me/officialbinschats')
         ],[
         InlineKeyboardButton('Commands', callback_data='help')
         ]
@@ -75,9 +75,10 @@ async def cb_handler(client, query: CallbackQuery):
             text=mr.HELP_TXT,
             reply_markup=InlineKeyboardMarkup( [[
                #⚠️ don't change source code & source link ⚠️ #
-               
-               [[InlineKeyboardButton("Close", callback_data = "close"),
-               InlineKeyboardButton("Return", callback_data = "start")
+               InlineKeyboardButton("🤝 Support", url="https://t.me/officialbinschats")
+               ],[
+               InlineKeyboardButton("Return", callback_data = "start"),
+               InlineKeyboardButton("Close", callback_data = "close")
                ]]
             )
         )

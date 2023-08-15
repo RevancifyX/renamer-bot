@@ -28,7 +28,7 @@ from helper.utils import not_subscribed
 @Client.on_message(filters.private & filters.create(not_subscribed))
 async def is_not_subscribed(client, message):
     buttons = [[ InlineKeyboardButton(text="📢 Join Our Update Channel", url=client.invitelink) ]]
-    text = "**You have not subscribed to our channel 😔. Please Join our channel to use this bot 🙏**"
+    text = "**⚠️ You haven't Subscribed to Our Channel.\n\nPlease Join Our Channel to Use this Bot ❗️**"
     await message.reply_text(text=text, reply_markup=InlineKeyboardMarkup(buttons))
           
 

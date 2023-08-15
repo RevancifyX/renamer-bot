@@ -37,7 +37,7 @@ logger.setLevel(logging.INFO)
  
 @Client.on_message(filters.command("users") & filters.user(ADMIN))
 async def get_stats(bot :Client, message: Message):
-    mr = await message.reply('**𝙰𝙲𝙲𝙴𝚂𝚂𝙸𝙽𝙶 𝙳𝙴𝚃𝙰𝙸𝙻𝚂.....**')
+    mr = await message.reply('**Accessing Details.....**')
     total_users = await db.total_users_count()
     await mr.edit( text=f"❤️‍🔥 TOTAL USER'S = `{total_users}`")
 

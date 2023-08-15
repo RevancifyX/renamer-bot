@@ -14,10 +14,12 @@ async def start(client, message):
     user = message.from_user
     if not await db.is_user_exist(user.id):
         await db.add_user(user.id)             
-    txt=f"👋 Hello, {user.mention} \n\n""**I am an Advance file Renamer and file Converter BOT with permanent and custom thumbnail support.**""\n\nSend me any video or document !"
+    txt=f"""**👋 Hello, {user.mention} \n\nI am an Advance file Renamer and file Converter BOT with permanent and custom thumbnail support.\n\nSend me any video or document !**"""
     button=InlineKeyboardMarkup([[
         InlineKeyboardButton('📢 Updates', url='https://t.me/LazyDeveloper'),
         InlineKeyboardButton('🤝 Support', url='https://t.me/LazyPrincessSupport')
+        ],[
+        InlineKeyboardButton('Commands', callback_data='help')
         ]
         ])
     if START_PIC:

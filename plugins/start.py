@@ -73,11 +73,12 @@ async def cb_handler(client, query: CallbackQuery):
     elif data == "help":
         await query.message.edit_text(
             text=mr.HELP_TXT,
-            reply_markup=InlineKeyboardMarkup( [
+            reply_markup=InlineKeyboardMarkup( [[
                #⚠️ don't change source code & source link ⚠️ #
-               InlineKeyboardButton("Return", callback_data = "start"),
-               InlineKeyboardButton("Close", callback_data = "close")
-               ]
+               
+               [[InlineKeyboardButton("Close", callback_data = "close"),
+               InlineKeyboardButton("Return", callback_data = "start")
+               ]]
             )
         )
     elif data == "close":

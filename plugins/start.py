@@ -62,7 +62,7 @@ async def cb_handler(client, query: CallbackQuery):
     if data == "start":
         await query.message.edit_text(
             txt=f"""**👋 Hello, {user.mention} \n\nI am an Advance file Renamer and file Converter BOT with permanent and custom thumbnail support.\n\nSend me any video or document !**"""
-    button=InlineKeyboardMarkup([[
+    reply_markup=InlineKeyboardMarkup( [[
         InlineKeyboardButton('📢 Updates', url='https://t.me/official_bins'),
         InlineKeyboardButton('🤝 Support', url='https://t.me/officialbins_chat')
         ],[

@@ -13,7 +13,7 @@ async def viewthumb(client, message):
 		
 @Client.on_message(filters.private & filters.command(['delthumb']))
 async def removethumb(client, message):
-thumbnail = await db.get_thumbnail(message.from_user.id)  
+thumbnail = await db.get_thumbnail(message.from_user.id)
     if not thumbnail:
        return await message.reply_text("**Sorry, No Thumbnail found ❗**")
     await db.set_thumbnail(message.from_user.id, file_id=None)

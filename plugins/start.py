@@ -39,10 +39,10 @@ async def start(client, message):
         await db.add_user(user.id)             
     txt=f"👋 Hello, {user.mention} \n\nI am an Advance file Renamer and file Converter BOT with permanent and custom thumbnail support.\n\nSend me any video or document !"
     button=InlineKeyboardMarkup([[
-        InlineKeyboardButton("😈 Developer 😈", callback_data='dev')
-        ],[
         InlineKeyboardButton('📢 Updates', url='https://t.me/official_bins'),
         InlineKeyboardButton('🤝 Support', url='https://t.me/officialbinschats')
+        ],[
+        InlineKeyboardButton("Commands", callback_data='help')
         ]
         ])
     if START_PIC:

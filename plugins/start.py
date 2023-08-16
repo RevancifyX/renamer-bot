@@ -37,7 +37,7 @@ async def start(client, message):
     user = message.from_user
     if not await db.is_user_exist(user.id):
         await db.add_user(user.id)             
-    txt=f"""*👋 Hello, {user.mention} \n\nI am an Advance file Renamer and file Converter BOT with permanent and custom thumbnail support.\n\nSend me any video or document !*"""
+    txt=f"""**👋 Hello, {user.mention} \n\nI am an Advance file Renamer and file Converter BOT with permanent and custom thumbnail support.\n\nSend me any video or document !**"""
     button=InlineKeyboardMarkup([[
         InlineKeyboardButton('📢 Updates', url='https://t.me/official_bins'),
         InlineKeyboardButton('🤝 Support', url='https://t.me/officialbinschats')
@@ -65,14 +65,14 @@ async def rename_start(client, message):
     filesize = humanize.naturalsize(file.file_size) 
     fileid = file.file_id
     try:
-        text = f"""**__What do you want me to do with this file.?__**\n\n**File Name** :- `{filename}`\n\n**File Size** :- `{filesize}`"""
+        text = f"""**File Name** :- `{filename}`\n\n**File Size** :- `{filesize}`"""
         buttons = [[ InlineKeyboardButton("Rename 📝", callback_data="rename") ],
                    [ InlineKeyboardButton("Cancel ❌", callback_data="cancel") ]]
         await message.reply_text(text=text, reply_to_message_id=message.id, reply_markup=InlineKeyboardMarkup(buttons))
         await sleep(FLOOD)
     except FloodWait as e:
         await sleep(e.value)
-        text = f"""**__What do you want me to do with this file.?__**\n\n**File Name** :- `{filename}`\n\n**File Size** :- `{filesize}`"""
+        text = f"""**File Name** :- `{filename}`\n\n**File Size** :- `{filesize}`"""
         buttons = [[ InlineKeyboardButton("Rename 📝", callback_data="rename") ],
                    [ InlineKeyboardButton("Cancel ❌", callback_data="cancel") ]]
         await message.reply_text(text=text, reply_to_message_id=message.id, reply_markup=InlineKeyboardMarkup(buttons))
@@ -84,7 +84,7 @@ async def cb_handler(client, query: CallbackQuery):
     data = query.data 
     if data == "start":
         await query.message.edit_text(
-            text=f"""👋 Hello, {query.from_user.mention} \n\nI am an Advance file Renamer and file Converter BOT with permanent and custom thumbnail support.\n\nSend me any video or document !""",
+            text=f"""**👋 Hello, {query.from_user.mention} \n\nI am an Advance file Renamer and file Converter BOT with permanent and custom thumbnail support.\n\nSend me any video or document !**""",
             reply_markup=InlineKeyboardMarkup( [[
         InlineKeyboardButton('📢 Updates', url='https://t.me/official_bins'),
         InlineKeyboardButton('🤝 Support', url='https://t.me/officialbinschats')
@@ -98,7 +98,7 @@ async def cb_handler(client, query: CallbackQuery):
             text=mr.HELP_TXT,
             reply_markup=InlineKeyboardMarkup( [[
                #⚠️ don't change source code & source link ⚠️ #
-               InlineKeyboardButton("🤝 Support", url="https://www.instagram.com/officialbinschats")
+               InlineKeyboardButton("🤝 Support", url="https://t.me/officialbinschats")
                ],[
                InlineKeyboardButton("Return", callback_data = "start"),
                InlineKeyboardButton("Close", callback_data = "close")

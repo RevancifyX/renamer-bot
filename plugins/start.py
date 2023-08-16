@@ -75,10 +75,14 @@ async def cb_handler(client, query: CallbackQuery):
             text=mr.HELP_TXT,
             reply_markup=InlineKeyboardMarkup( [[
                #⚠️ don't change source code & source link ⚠️ #
-               InlineKeyboardButton("🤝 Support", url="https://t.me/officialbinschats")
+               InlineKeyboardButton("❣️ Contact Admin ❣️", url="https://www.instagram.com/LazyDeveloperrr")
                ],[
-               InlineKeyboardButton("Return", callback_data = "start"),
-               InlineKeyboardButton("Close", callback_data = "close")
+               InlineKeyboardButton("❤️‍🔥 How to use me ? ❤️‍🔥", url='https://www.youtube.com/channel/UCY-iDra0x2hdd9PdHKcZkRw')
+               ],[
+               InlineKeyboardButton("🎬 Join our Movie Channel 🎬", url="https://t.me/+WwDm2ByFlz80YTY9")
+               ],[
+               InlineKeyboardButton("🔒 𝙲𝙻𝙾𝚂𝙴", callback_data = "close"),
+               InlineKeyboardButton("◀️ 𝙱𝙰𝙲𝙺", callback_data = "start")
                ]]
             )
         )

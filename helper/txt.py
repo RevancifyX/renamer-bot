@@ -58,10 +58,6 @@ class mr(object):
 >> /see_caption - see your custom caption
 >> /del_caption - delete custom caption
 
-Example:- /set_caption 📕 File Name: {filename}
-💾 Size: {filesize}
-⏰ Duration: {duration}
-
 ✏️ <b><u>To Rename A File</u></b>
 >> Send any file and click rename option and type new file name and \n send select [ document, video, audio ] 👈 choice this.</a>
 """
